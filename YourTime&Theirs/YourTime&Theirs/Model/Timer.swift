@@ -14,4 +14,5 @@ struct Timer: Codable, Equatable {
     var currentTime: Date?
     var locationTime: Date?
     var timeLeft: Date?
+    var active = false 
 }
