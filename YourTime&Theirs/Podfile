@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'YourTime&Theirs' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for YourTime&Theirs
+
+  pod 'CCWATextField', '1.0.1'
+pod 'SKCountryPicker'
+pod 'TimeZonePicker'
+
+  target 'YourTime&TheirsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'YourTime&TheirsUITests' do
+    # Pods for testing
+  end
+
+end

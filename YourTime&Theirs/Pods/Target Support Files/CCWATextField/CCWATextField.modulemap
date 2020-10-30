@@ -1,0 +1,6 @@
+framework module CCWATextField {
+  umbrella header "CCWATextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-YourTime&Theirs-YourTime&TheirsUITests/Pods-YourTime&Theirs-YourTime&TheirsUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CCWATextField/CCWATextField.framework
+${BUILT_PRODUCTS_DIR}/SKCountryPicker/SKCountryPicker.framework
+${BUILT_PRODUCTS_DIR}/TimeZonePicker/TimeZonePicker.framework

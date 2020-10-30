@@ -1,0 +1,24 @@
+PODS:
+  - CCWATextField (1.0.1)
+  - SKCountryPicker (1.2.9)
+  - TimeZonePicker (1.3.0)
+
+DEPENDENCIES:
+  - CCWATextField (= 1.0.1)
+  - SKCountryPicker
+  - TimeZonePicker
+
+SPEC REPOS:
+  trunk:
+    - CCWATextField
+    - SKCountryPicker
+    - TimeZonePicker
+
+SPEC CHECKSUMS:
+  CCWATextField: b006a867842f07218747f824e5abc2d4bbf920de
+  SKCountryPicker: 7ad1e7dfb482cfb26855e33c2d70dbf1eaf218fe
+  TimeZonePicker: 7f3e60375dc3754a44f4a417f01e5c707b2b72b4
+
+PODFILE CHECKSUM: f595ffa809f0323b9af9713f86846d42acbb0cd4
+
+COCOAPODS: 1.9.3
