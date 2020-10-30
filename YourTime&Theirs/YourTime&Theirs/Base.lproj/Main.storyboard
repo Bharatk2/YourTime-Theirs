@@ -85,13 +85,13 @@
         <!--Home-->
         <scene sceneID="9Tc-lw-CKC">
             <objects>
-                <tableViewController id="1CL-N1-iJd" sceneMemberID="viewController">
+                <tableViewController id="1CL-N1-iJd" customClass="EventTableViewController" customModule="YourTime_Theirs" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="d2A-J5-Lph">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="197" id="wZr-CV-dgO">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeCell" rowHeight="197" id="wZr-CV-dgO" customClass="TimeTableViewCell" customModule="YourTime_Theirs" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="197"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wZr-CV-dgO" id="ta2-Pl-frr">
@@ -188,6 +188,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="currentTimeLabel" destination="bdr-ho-eRM" id="AL4-pA-cxU"/>
+                                    <outlet property="locationTimeLabel" destination="bdr-ho-eRM" id="g4T-9v-d1u"/>
                                     <segue destination="or0-a9-tia" kind="show" id="kcv-oA-ZZ0"/>
                                 </connections>
                             </tableViewCell>

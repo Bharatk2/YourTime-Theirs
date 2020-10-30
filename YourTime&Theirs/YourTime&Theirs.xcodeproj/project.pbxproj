@@ -12,7 +12,7 @@
 		7E92C9A7F9CADC7C449DEFAF /* Pods_YourTime_TheirsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146BD28E5A0C972985479D3B /* Pods_YourTime_TheirsTests.framework */; };
 		BA39FA1C254B5EF900B98CAE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39FA1B254B5EF900B98CAE /* Timer.swift */; };
 		BA39FA20254B616100B98CAE /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39FA1F254B616100B98CAE /* TimerController.swift */; };
-		BA39FA23254B76AF00B98CAE /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = BA39FA22254B76AF00B98CAE /* SwiftPackageProductDependency */; };
+		BA39FA23254B76AF00B98CAE /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = BA39FA22254B76AF00B98CAE /* CountryPicker */; };
 		BA39FA26254B821400B98CAE /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39FA25254B821400B98CAE /* CountryViewController.swift */; };
 		BA39FA28254B822200B98CAE /* TimeZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39FA27254B822200B98CAE /* TimeZoneViewController.swift */; };
 		BA7232B3254A61F40090D88B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7232B2254A61F40090D88B /* AppDelegate.swift */; };
@@ -22,6 +22,8 @@
 		BA7232BF254A61F80090D88B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7232BD254A61F80090D88B /* LaunchScreen.storyboard */; };
 		BA7232CA254A61F90090D88B /* YourTime_TheirsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7232C9254A61F90090D88B /* YourTime_TheirsTests.swift */; };
 		BA7232D5254A61F90090D88B /* YourTime_TheirsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7232D4254A61F90090D88B /* YourTime_TheirsUITests.swift */; };
+		BAE5F926254C9F0D00702F02 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5F925254C9F0D00702F02 /* EventTableViewController.swift */; };
+		BAE5F929254C9F4100702F02 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5F928254C9F4100702F02 /* TimeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		BA7232D0254A61F90090D88B /* YourTime&TheirsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YourTime&TheirsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7232D4254A61F90090D88B /* YourTime_TheirsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTime_TheirsUITests.swift; sourceTree = "<group>"; };
 		BA7232D6254A61F90090D88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE5F925254C9F0D00702F02 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		BAE5F928254C9F4100702F02 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
 		BE475C97982630BB307F1003 /* Pods_YourTime_Theirs_YourTime_TheirsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourTime_Theirs_YourTime_TheirsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78D5B9A1F5677F50D829013 /* Pods-YourTime&TheirsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourTime&TheirsTests.release.xcconfig"; path = "Target Support Files/Pods-YourTime&TheirsTests/Pods-YourTime&TheirsTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8689EC3B12ED59B258133ED /* Pods-YourTime&TheirsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourTime&TheirsTests.debug.xcconfig"; path = "Target Support Files/Pods-YourTime&TheirsTests/Pods-YourTime&TheirsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA39FA23254B76AF00B98CAE /* BuildFile in Frameworks */,
+				BA39FA23254B76AF00B98CAE /* CountryPicker in Frameworks */,
 				24E27F33EA1B1548F656ABD2 /* Pods_YourTime_Theirs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,7 +123,6 @@
 				C8689EC3B12ED59B258133ED /* Pods-YourTime&TheirsTests.debug.xcconfig */,
 				C78D5B9A1F5677F50D829013 /* Pods-YourTime&TheirsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,6 +140,7 @@
 			children = (
 				BA39FA25254B821400B98CAE /* CountryViewController.swift */,
 				BA39FA27254B822200B98CAE /* TimeZoneViewController.swift */,
+				BAE5F925254C9F0D00702F02 /* EventTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -168,6 +172,7 @@
 			children = (
 				BA7232B2254A61F40090D88B /* AppDelegate.swift */,
 				BA7232B4254A61F40090D88B /* SceneDelegate.swift */,
+				BAE5F927254C9F2B00702F02 /* Views */,
 				BA39FA24254B81FF00B98CAE /* ViewControllers */,
 				BA7232B8254A61F40090D88B /* Main.storyboard */,
 				BA39FA1E254B615100B98CAE /* Model */,
@@ -196,6 +201,14 @@
 			path = "YourTime&TheirsUITests";
 			sourceTree = "<group>";
 		};
+		BAE5F927254C9F2B00702F02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAE5F928254C9F4100702F02 /* TimeTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,7 +228,7 @@
 			);
 			name = "YourTime&Theirs";
 			packageProductDependencies = (
-				BA39FA22254B76AF00B98CAE /* SwiftPackageProductDependency */,
+				BA39FA22254B76AF00B98CAE /* CountryPicker */,
 			);
 			productName = "YourTime&Theirs";
 			productReference = BA7232AF254A61F40090D88B /* YourTime&Theirs.app */;
@@ -293,7 +306,7 @@
 			);
 			mainGroup = BA7232A6254A61F40090D88B;
 			packageReferences = (
-				BA39FA21254B76AF00B98CAE /* RemoteSwiftPackageReference */,
+				BA39FA21254B76AF00B98CAE /* XCRemoteSwiftPackageReference "CountryPicker" */,
 			);
 			productRefGroup = BA7232B0254A61F40090D88B /* Products */;
 			projectDirPath = "";
@@ -445,6 +458,8 @@
 				BA39FA28254B822200B98CAE /* TimeZoneViewController.swift in Sources */,
 				BA39FA20254B616100B98CAE /* TimerController.swift in Sources */,
 				BA7232B3254A61F40090D88B /* AppDelegate.swift in Sources */,
+				BAE5F929254C9F4100702F02 /* TimeTableViewCell.swift in Sources */,
+				BAE5F926254C9F0D00702F02 /* EventTableViewController.swift in Sources */,
 				BA39FA26254B821400B98CAE /* CountryViewController.swift in Sources */,
 				BA7232B5254A61F40090D88B /* SceneDelegate.swift in Sources */,
 			);
@@ -783,7 +798,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BA39FA21254B76AF00B98CAE /* RemoteSwiftPackageReference */ = {
+		BA39FA21254B76AF00B98CAE /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SURYAKANTSHARMA/CountryPicker.git";
 			requirement = {
@@ -794,9 +809,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BA39FA22254B76AF00B98CAE /* SwiftPackageProductDependency */ = {
+		BA39FA22254B76AF00B98CAE /* CountryPicker */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BA39FA21254B76AF00B98CAE /* RemoteSwiftPackageReference */;
+			package = BA39FA21254B76AF00B98CAE /* XCRemoteSwiftPackageReference "CountryPicker" */;
 			productName = CountryPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
