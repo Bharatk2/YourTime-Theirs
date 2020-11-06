@@ -53,7 +53,7 @@ final class TimeZonePickerDataSource: NSObject {
                     // should never get here / file does not exist
                     onComplete(false)
                 }
-            } catch {
+            } catch { 
                 // should never get here / unless Data or JSONSerialization throw an error
                 onComplete(false)
             }

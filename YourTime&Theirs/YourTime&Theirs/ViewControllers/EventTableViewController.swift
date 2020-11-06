@@ -7,40 +7,84 @@
 //
 
 import UIKit
+extension Date {
 
+    func offsetFrom(date: Date, type: TimerType) -> String {
+
+        let dayHourMinuteSecond: Set<Calendar.Component> = [.day, .hour, .minute, .second]
+        let difference = NSCalendar.current.dateComponents(dayHourMinuteSecond, from: date, to: self)
+
+        var seconds = ""
+        var minutes = ""
+        var hours = ""
+        var days = ""
+        var typeStr = ""
+
+        switch type {
+        case .both:
+            typeStr = " 📆⏰"
+            seconds = "\(difference.second ?? 0)s"
+            minutes = "\(difference.minute ?? 0)m" + " " + seconds
+            hours = "\(difference.hour ?? 0)h" + " " + minutes
+            days = "\(difference.day ?? 0)d" + " " + hours
+        case .date:
+            typeStr = " 📆"
+            days = "\(difference.day ?? 0) Days"
+        case .time:
+            typeStr = " ⏰"
+            seconds = "\(difference.second ?? 0)s"
+            minutes = "\(difference.minute ?? 0)m" + " " + seconds
+            hours = "\(difference.hour ?? 0)h" + " " + minutes
+            days = "\(difference.day ?? 0)d" + " " + hours
+        }
+
+        if let day = difference.day, day          > 0 { return days + typeStr }
+        if let hour = difference.hour, hour       > 0 { return hours + typeStr }
+        if let minute = difference.minute, minute > 0 { return minutes + typeStr }
+        if let second = difference.second, second > 0 { return seconds + typeStr }
+        return .finishedMsg
+    }
+
+}
+
+extension String {
+    static var finishedMsg = "Done"
+    static var appTitle = "Count🔻"
+    static var noTag = "no tag"
+}
+
+var timerController = TimerController()
+var notificationController = NotificationController()
+protocol MyCustomCellDelegator {
+    func callSegueFromCell(myData dataobject: AnyObject)
+}
 class EventTableViewController: UITableViewController {
-
+    
+    var timeZoneString: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+      
     }
 
+    
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
+   
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TimeCell", for: indexPath) as? TimeTableViewCell else { return UITableViewCell() }
+       
+        cell.timeZoneString = self.timeZoneString
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,4 +131,11 @@ class EventTableViewController: UITableViewController {
     }
     */
 
+}
+extension EventTableViewController: MyCustomCellDelegator {
+    func callSegueFromCell(myData dataobject: AnyObject) {
+        self.performSegue(withIdentifier: "TimeCell", sender:dataobject )
+    }
+    
+    
 }

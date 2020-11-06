@@ -8,21 +8,53 @@
 
 import UIKit
 
+
 class TimeTableViewCell: UITableViewCell {
+    
 
     @IBOutlet weak var currentTimeLabel: UILabel!
-    
     @IBOutlet weak var locationTimeLabel: UILabel!
+    
+    var timer = Timer()
+    var timeZoneString: String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        timer = Timer.scheduledTimer(timeInterval: 1.0,
+                                     target: self,
+                                     selector: #selector(tick),
+                                     userInfo: nil,
+                                     repeats: true)
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
+        
     }
+    
 
+   
+    var dateFormatting: DateFormatter = {
+       
+        let formatter = DateFormatter()
+        formatter.timeStyle = .full
+        return formatter
+    }()
+    var dateFormatting2: DateFormatter = {
+          
+           let formatter = DateFormatter()
+        formatter.timeZone = .current
+           formatter.timeStyle = .full
+           return formatter
+       }()
+    
+    
+    @objc func tick() {
+       dateFormatting.timeZone = TimeZone(abbreviation: timeZoneString ?? "" )
+        locationTimeLabel.text = dateFormatting.string(from: Date())
+        currentTimeLabel.text = dateFormatting2.string(from: Date())
+      
+    }
 }

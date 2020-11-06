@@ -14,7 +14,7 @@ public final class TimeZonePickerViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     public class func getVC(withDelegate delegate: TimeZonePickerDelegate) -> UINavigationController {
-        let storyboard = UIStoryboard(name: "TimeZonePicker", bundle: Bundle(for: TimeZonePickerViewController.self))
+        let storyboard = UIStoryboard(name: "TimeZoneStory", bundle: Bundle(for: TimeZonePickerViewController.self))
         let nc = storyboard.instantiateInitialViewController() as! UINavigationController
         if let vc = nc.topViewController as? TimeZonePickerViewController {
             vc.delegate = delegate

@@ -8,50 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		24E27F33EA1B1548F656ABD2 /* Pods_YourTime_Theirs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC743BF783EBC524EF807A5 /* Pods_YourTime_Theirs.framework */; };
-		641378422CAEBBCFA3CB4918 /* Pods_YourTime_Theirs_YourTime_TheirsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE475C97982630BB307F1003 /* Pods_YourTime_Theirs_YourTime_TheirsUITests.framework */; };
-		7E92C9A7F9CADC7C449DEFAF /* Pods_YourTime_TheirsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146BD28E5A0C972985479D3B /* Pods_YourTime_TheirsTests.framework */; };
-		BA39FA1C254B5EF900B98CAE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39FA1B254B5EF900B98CAE /* Timer.swift */; };
+		BA39FA1C254B5EF900B98CAE /* TimerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39FA1B254B5EF900B98CAE /* TimerEvent.swift */; };
 		BA39FA20254B616100B98CAE /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39FA1F254B616100B98CAE /* TimerController.swift */; };
 		BA39FA23254B76AF00B98CAE /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = BA39FA22254B76AF00B98CAE /* CountryPicker */; };
 		BA39FA26254B821400B98CAE /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39FA25254B821400B98CAE /* CountryViewController.swift */; };
 		BA39FA28254B822200B98CAE /* TimeZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39FA27254B822200B98CAE /* TimeZoneViewController.swift */; };
+		BA718373255608F00078CD4A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA718372255608F00078CD4A /* NotificationController.swift */; };
 		BA7232B3254A61F40090D88B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7232B2254A61F40090D88B /* AppDelegate.swift */; };
 		BA7232B5254A61F40090D88B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7232B4254A61F40090D88B /* SceneDelegate.swift */; };
 		BA7232BA254A61F40090D88B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7232B8254A61F40090D88B /* Main.storyboard */; };
 		BA7232BC254A61F80090D88B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7232BB254A61F80090D88B /* Assets.xcassets */; };
 		BA7232BF254A61F80090D88B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7232BD254A61F80090D88B /* LaunchScreen.storyboard */; };
-		BA7232CA254A61F90090D88B /* YourTime_TheirsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7232C9254A61F90090D88B /* YourTime_TheirsTests.swift */; };
-		BA7232D5254A61F90090D88B /* YourTime_TheirsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7232D4254A61F90090D88B /* YourTime_TheirsUITests.swift */; };
+		BAD2F48D255092F100F8DFF8 /* TimeZonePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2F48A255092F100F8DFF8 /* TimeZonePickerDelegate.swift */; };
+		BAD2F48E255092F100F8DFF8 /* CityCountryTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2F48B255092F100F8DFF8 /* CityCountryTimeZone.swift */; };
+		BAD2F48F255092F100F8DFF8 /* TimeZonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2F489255092F100F8DFF8 /* TimeZonePickerViewController.swift */; };
+		BAD2F490255092F100F8DFF8 /* TimeZonePickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2F48C255092F100F8DFF8 /* TimeZonePickerDataSource.swift */; };
+		BAD2F4942550C3AF00F8DFF8 /* TimeZoneStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD2F4922550933300F8DFF8 /* TimeZoneStory.storyboard */; };
+		BAD2F4952550C3BE00F8DFF8 /* CitiesAndTimeZones.json in Resources */ = {isa = PBXBuildFile; fileRef = BAD2F4912550930400F8DFF8 /* CitiesAndTimeZones.json */; };
+		BAD2F4972550DC0800F8DFF8 /* EventStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD2F4962550DC0800F8DFF8 /* EventStory.storyboard */; };
 		BAE5F926254C9F0D00702F02 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5F925254C9F0D00702F02 /* EventTableViewController.swift */; };
 		BAE5F929254C9F4100702F02 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5F928254C9F4100702F02 /* TimeTableViewCell.swift */; };
+		BAFC3ACF254D2CBC0099F71A /* MeetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC3ACE254D2CBC0099F71A /* MeetViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BA7232C6254A61F90090D88B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA7232A7254A61F40090D88B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA7232AE254A61F40090D88B;
-			remoteInfo = "YourTime&Theirs";
-		};
-		BA7232D1254A61F90090D88B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA7232A7254A61F40090D88B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA7232AE254A61F40090D88B;
-			remoteInfo = "YourTime&Theirs";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B84A595D8DA89DD9E0A9F34 /* Pods-YourTime&Theirs-YourTime&TheirsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourTime&Theirs-YourTime&TheirsUITests.release.xcconfig"; path = "Target Support Files/Pods-YourTime&Theirs-YourTime&TheirsUITests/Pods-YourTime&Theirs-YourTime&TheirsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		146BD28E5A0C972985479D3B /* Pods_YourTime_TheirsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourTime_TheirsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3443F0945D7116453D8461DF /* Pods-YourTime&Theirs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourTime&Theirs.release.xcconfig"; path = "Target Support Files/Pods-YourTime&Theirs/Pods-YourTime&Theirs.release.xcconfig"; sourceTree = "<group>"; };
 		8AC743BF783EBC524EF807A5 /* Pods_YourTime_Theirs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourTime_Theirs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA39FA1B254B5EF900B98CAE /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		BA39FA1B254B5EF900B98CAE /* TimerEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEvent.swift; sourceTree = "<group>"; };
 		BA39FA1F254B616100B98CAE /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		BA39FA25254B821400B98CAE /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		BA39FA27254B822200B98CAE /* TimeZoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneViewController.swift; sourceTree = "<group>"; };
+		BA718372255608F00078CD4A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		BA7232AF254A61F40090D88B /* YourTime&Theirs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YourTime&Theirs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7232B2254A61F40090D88B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA7232B4254A61F40090D88B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,14 +48,20 @@
 		BA7232BB254A61F80090D88B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA7232BE254A61F80090D88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA7232C0254A61F80090D88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA7232C5254A61F90090D88B /* YourTime&TheirsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YourTime&TheirsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7232C9254A61F90090D88B /* YourTime_TheirsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTime_TheirsTests.swift; sourceTree = "<group>"; };
 		BA7232CB254A61F90090D88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA7232D0254A61F90090D88B /* YourTime&TheirsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YourTime&TheirsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7232D4254A61F90090D88B /* YourTime_TheirsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTime_TheirsUITests.swift; sourceTree = "<group>"; };
 		BA7232D6254A61F90090D88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD2F489255092F100F8DFF8 /* TimeZonePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonePickerViewController.swift; sourceTree = "<group>"; };
+		BAD2F48A255092F100F8DFF8 /* TimeZonePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonePickerDelegate.swift; sourceTree = "<group>"; };
+		BAD2F48B255092F100F8DFF8 /* CityCountryTimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCountryTimeZone.swift; sourceTree = "<group>"; };
+		BAD2F48C255092F100F8DFF8 /* TimeZonePickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonePickerDataSource.swift; sourceTree = "<group>"; };
+		BAD2F4912550930400F8DFF8 /* CitiesAndTimeZones.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CitiesAndTimeZones.json; sourceTree = "<group>"; };
+		BAD2F4922550933300F8DFF8 /* TimeZoneStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimeZoneStory.storyboard; sourceTree = "<group>"; };
+		BAD2F4962550DC0800F8DFF8 /* EventStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventStory.storyboard; sourceTree = "<group>"; };
 		BAE5F925254C9F0D00702F02 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		BAE5F928254C9F4100702F02 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		BAFC3ACE254D2CBC0099F71A /* MeetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetViewController.swift; sourceTree = "<group>"; };
 		BE475C97982630BB307F1003 /* Pods_YourTime_Theirs_YourTime_TheirsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourTime_Theirs_YourTime_TheirsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78D5B9A1F5677F50D829013 /* Pods-YourTime&TheirsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourTime&TheirsTests.release.xcconfig"; path = "Target Support Files/Pods-YourTime&TheirsTests/Pods-YourTime&TheirsTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8689EC3B12ED59B258133ED /* Pods-YourTime&TheirsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourTime&TheirsTests.debug.xcconfig"; path = "Target Support Files/Pods-YourTime&TheirsTests/Pods-YourTime&TheirsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,22 +76,6 @@
 			files = (
 				BA39FA23254B76AF00B98CAE /* CountryPicker in Frameworks */,
 				24E27F33EA1B1548F656ABD2 /* Pods_YourTime_Theirs.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA7232C2254A61F90090D88B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E92C9A7F9CADC7C449DEFAF /* Pods_YourTime_TheirsTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA7232CD254A61F90090D88B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				641378422CAEBBCFA3CB4918 /* Pods_YourTime_Theirs_YourTime_TheirsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,8 +108,13 @@
 		BA39FA1E254B615100B98CAE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BA39FA1B254B5EF900B98CAE /* Timer.swift */,
+				BAD2F48B255092F100F8DFF8 /* CityCountryTimeZone.swift */,
+				BAD2F48C255092F100F8DFF8 /* TimeZonePickerDataSource.swift */,
+				BAD2F48A255092F100F8DFF8 /* TimeZonePickerDelegate.swift */,
+				BAD2F489255092F100F8DFF8 /* TimeZonePickerViewController.swift */,
+				BA39FA1B254B5EF900B98CAE /* TimerEvent.swift */,
 				BA39FA1F254B616100B98CAE /* TimerController.swift */,
+				BA718372255608F00078CD4A /* NotificationController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -141,6 +125,7 @@
 				BA39FA25254B821400B98CAE /* CountryViewController.swift */,
 				BA39FA27254B822200B98CAE /* TimeZoneViewController.swift */,
 				BAE5F925254C9F0D00702F02 /* EventTableViewController.swift */,
+				BAFC3ACE254D2CBC0099F71A /* MeetViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -161,8 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				BA7232AF254A61F40090D88B /* YourTime&Theirs.app */,
-				BA7232C5254A61F90090D88B /* YourTime&TheirsTests.xctest */,
-				BA7232D0254A61F90090D88B /* YourTime&TheirsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +158,8 @@
 				BAE5F927254C9F2B00702F02 /* Views */,
 				BA39FA24254B81FF00B98CAE /* ViewControllers */,
 				BA7232B8254A61F40090D88B /* Main.storyboard */,
+				BAD2F4962550DC0800F8DFF8 /* EventStory.storyboard */,
+				BAD2F4932550C1D700F8DFF8 /* Resources */,
 				BA39FA1E254B615100B98CAE /* Model */,
 				BA7232BB254A61F80090D88B /* Assets.xcassets */,
 				BA7232BD254A61F80090D88B /* LaunchScreen.storyboard */,
@@ -199,6 +184,15 @@
 				BA7232D6254A61F90090D88B /* Info.plist */,
 			);
 			path = "YourTime&TheirsUITests";
+			sourceTree = "<group>";
+		};
+		BAD2F4932550C1D700F8DFF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BAD2F4922550933300F8DFF8 /* TimeZoneStory.storyboard */,
+				BAD2F4912550930400F8DFF8 /* CitiesAndTimeZones.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BAE5F927254C9F2B00702F02 /* Views */ = {
@@ -234,45 +228,6 @@
 			productReference = BA7232AF254A61F40090D88B /* YourTime&Theirs.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BA7232C4254A61F90090D88B /* YourTime&TheirsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA7232DC254A61F90090D88B /* Build configuration list for PBXNativeTarget "YourTime&TheirsTests" */;
-			buildPhases = (
-				B2F155720A17999C6453BCDC /* [CP] Check Pods Manifest.lock */,
-				BA7232C1254A61F90090D88B /* Sources */,
-				BA7232C2254A61F90090D88B /* Frameworks */,
-				BA7232C3254A61F90090D88B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA7232C7254A61F90090D88B /* PBXTargetDependency */,
-			);
-			name = "YourTime&TheirsTests";
-			productName = "YourTime&TheirsTests";
-			productReference = BA7232C5254A61F90090D88B /* YourTime&TheirsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BA7232CF254A61F90090D88B /* YourTime&TheirsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA7232DF254A61F90090D88B /* Build configuration list for PBXNativeTarget "YourTime&TheirsUITests" */;
-			buildPhases = (
-				1797FC21308C7AEF62A3F73D /* [CP] Check Pods Manifest.lock */,
-				BA7232CC254A61F90090D88B /* Sources */,
-				BA7232CD254A61F90090D88B /* Frameworks */,
-				BA7232CE254A61F90090D88B /* Resources */,
-				0B0D8B82619CC1D72711D8C1 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA7232D2254A61F90090D88B /* PBXTargetDependency */,
-			);
-			name = "YourTime&TheirsUITests";
-			productName = "YourTime&TheirsUITests";
-			productReference = BA7232D0254A61F90090D88B /* YourTime&TheirsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -285,14 +240,6 @@
 				TargetAttributes = {
 					BA7232AE254A61F40090D88B = {
 						CreatedOnToolsVersion = 11.6;
-					};
-					BA7232C4254A61F90090D88B = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = BA7232AE254A61F40090D88B;
-					};
-					BA7232CF254A61F90090D88B = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = BA7232AE254A61F40090D88B;
 					};
 				};
 			};
@@ -313,8 +260,6 @@
 			projectRoot = "";
 			targets = (
 				BA7232AE254A61F40090D88B /* YourTime&Theirs */,
-				BA7232C4254A61F90090D88B /* YourTime&TheirsTests */,
-				BA7232CF254A61F90090D88B /* YourTime&TheirsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -324,68 +269,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD2F4952550C3BE00F8DFF8 /* CitiesAndTimeZones.json in Resources */,
 				BA7232BF254A61F80090D88B /* LaunchScreen.storyboard in Resources */,
 				BA7232BC254A61F80090D88B /* Assets.xcassets in Resources */,
+				BAD2F4972550DC0800F8DFF8 /* EventStory.storyboard in Resources */,
 				BA7232BA254A61F40090D88B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA7232C3254A61F90090D88B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA7232CE254A61F90090D88B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				BAD2F4942550C3AF00F8DFF8 /* TimeZoneStory.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B0D8B82619CC1D72711D8C1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YourTime&Theirs-YourTime&TheirsUITests/Pods-YourTime&Theirs-YourTime&TheirsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YourTime&Theirs-YourTime&TheirsUITests/Pods-YourTime&Theirs-YourTime&TheirsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YourTime&Theirs-YourTime&TheirsUITests/Pods-YourTime&Theirs-YourTime&TheirsUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1797FC21308C7AEF62A3F73D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YourTime&Theirs-YourTime&TheirsUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5CCA2076F2F72BD76BA5079C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,28 +320,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B2F155720A17999C6453BCDC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YourTime&TheirsTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -454,47 +327,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA39FA1C254B5EF900B98CAE /* Timer.swift in Sources */,
+				BAD2F48E255092F100F8DFF8 /* CityCountryTimeZone.swift in Sources */,
+				BA39FA1C254B5EF900B98CAE /* TimerEvent.swift in Sources */,
 				BA39FA28254B822200B98CAE /* TimeZoneViewController.swift in Sources */,
 				BA39FA20254B616100B98CAE /* TimerController.swift in Sources */,
 				BA7232B3254A61F40090D88B /* AppDelegate.swift in Sources */,
+				BAD2F48F255092F100F8DFF8 /* TimeZonePickerViewController.swift in Sources */,
+				BAFC3ACF254D2CBC0099F71A /* MeetViewController.swift in Sources */,
 				BAE5F929254C9F4100702F02 /* TimeTableViewCell.swift in Sources */,
 				BAE5F926254C9F0D00702F02 /* EventTableViewController.swift in Sources */,
+				BAD2F48D255092F100F8DFF8 /* TimeZonePickerDelegate.swift in Sources */,
+				BA718373255608F00078CD4A /* NotificationController.swift in Sources */,
 				BA39FA26254B821400B98CAE /* CountryViewController.swift in Sources */,
+				BAD2F490255092F100F8DFF8 /* TimeZonePickerDataSource.swift in Sources */,
 				BA7232B5254A61F40090D88B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA7232C1254A61F90090D88B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA7232CA254A61F90090D88B /* YourTime_TheirsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA7232CC254A61F90090D88B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA7232D5254A61F90090D88B /* YourTime_TheirsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BA7232C7254A61F90090D88B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BA7232AE254A61F40090D88B /* YourTime&Theirs */;
-			targetProxy = BA7232C6254A61F90090D88B /* PBXContainerItemProxy */;
-		};
-		BA7232D2254A61F90090D88B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BA7232AE254A61F40090D88B /* YourTime&Theirs */;
-			targetProxy = BA7232D1254A61F90090D88B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BA7232B8254A61F40090D88B /* Main.storyboard */ = {
@@ -668,94 +518,6 @@
 			};
 			name = Release;
 		};
-		BA7232DD254A61F90090D88B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8689EC3B12ED59B258133ED /* Pods-YourTime&TheirsTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MFBD923VWU;
-				INFOPLIST_FILE = "YourTime&TheirsTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bharat.YourTime-TheirsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YourTime&Theirs.app/YourTime&Theirs";
-			};
-			name = Debug;
-		};
-		BA7232DE254A61F90090D88B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C78D5B9A1F5677F50D829013 /* Pods-YourTime&TheirsTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MFBD923VWU;
-				INFOPLIST_FILE = "YourTime&TheirsTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bharat.YourTime-TheirsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YourTime&Theirs.app/YourTime&Theirs";
-			};
-			name = Release;
-		};
-		BA7232E0254A61F90090D88B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE1E453452B9C7949164ECE9 /* Pods-YourTime&Theirs-YourTime&TheirsUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MFBD923VWU;
-				INFOPLIST_FILE = "YourTime&TheirsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bharat.YourTime-TheirsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "YourTime&Theirs";
-			};
-			name = Debug;
-		};
-		BA7232E1254A61F90090D88B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B84A595D8DA89DD9E0A9F34 /* Pods-YourTime&Theirs-YourTime&TheirsUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MFBD923VWU;
-				INFOPLIST_FILE = "YourTime&TheirsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bharat.YourTime-TheirsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "YourTime&Theirs";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -773,24 +535,6 @@
 			buildConfigurations = (
 				BA7232DA254A61F90090D88B /* Debug */,
 				BA7232DB254A61F90090D88B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BA7232DC254A61F90090D88B /* Build configuration list for PBXNativeTarget "YourTime&TheirsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA7232DD254A61F90090D88B /* Debug */,
-				BA7232DE254A61F90090D88B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BA7232DF254A61F90090D88B /* Build configuration list for PBXNativeTarget "YourTime&TheirsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA7232E0254A61F90090D88B /* Debug */,
-				BA7232E1254A61F90090D88B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -12,10 +12,9 @@ import SKCountryPicker
 class CountryViewController: UIViewController {
 
     @IBOutlet weak var pickCountryButton: UIButton!
-    
     @IBOutlet weak var countryPickerView: CountryPickerView!
-    
     @IBOutlet weak var chooseCountryLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -23,9 +22,6 @@ class CountryViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    
-
     @IBAction func nextTapped(_ sender: Any) {
         performSegue(withIdentifier: "TimeZoneSegue", sender: self)
     }
@@ -43,7 +39,6 @@ class CountryViewController: UIViewController {
         }
     }
 
- 
     private func setupStoryboardPickerViewCallback() {
       countryPickerView.onSelectCountry { [weak self] (country) in
             guard let self = self,

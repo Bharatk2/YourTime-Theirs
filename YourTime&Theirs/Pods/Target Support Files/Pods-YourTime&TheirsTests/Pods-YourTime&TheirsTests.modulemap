@@ -1,6 +1,0 @@
-framework module Pods_YourTime_TheirsTests {
-  umbrella header "Pods-YourTime&TheirsTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
